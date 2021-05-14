@@ -12,3 +12,50 @@ body {
     color: #3a3a3a;
     font-size: 100%;
 }
+
+/* headings and logo*/
+
+header {
+    width: 100%;
+}
+
+#menu {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #4c6d6d;
+    float: left;
+    margin-top: 60px;
+}
+
+#menu a {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #4c6d6d;
+    text-decoration: none;
+}
+
+#menu a:hover {
+  
+    color: #f9ae22;
+    text-decoration: none;
+}
+#logo {
+    float: left;
+    height: 150px;
+    width: auto; 
+    border-radius: 10%; 
+    margin: 10px;
+} 
+#menu li {
+    float: left;
+    list-style: none;
+    margin: 20px;
+}
+
+#logoContainer
+{
+    float: left;
+}
+
