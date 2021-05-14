@@ -59,3 +59,13 @@ header {
     float: left;
 }
 
+/*main image*/
+#main
+{
+    clear: both;
+    text-align: center;
+}
+#home img {
+    width: 100%;
+    background: url(../images/main-image.png) no-repeat center center;
+}
