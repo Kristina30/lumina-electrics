@@ -67,7 +67,6 @@ header {
 }
 #home img {
     width: 100%;
-    background: url(../images/main-image.png) no-repeat center center;
 }
 
 /* About us section*/
@@ -128,6 +127,14 @@ padding-top: 30px;
 hr {
     border: 1px solid #4b6c6c;
 }
+.avatar-image {
+    display: inline-flex;
+    align-items:center; 
+}
+h3 {
+    padding: 2px;
+}
+
 /* Circular image*/
 #circle-container {
     width: 200px;
@@ -147,3 +154,4 @@ hr {
     height: 100%;
     
 }
+
