@@ -69,3 +69,35 @@ header {
     width: 100%;
     background: url(../images/main-image.png) no-repeat center center;
 }
+
+/* about us section*/
+#aboutus h2 {
+    text-decoration: underline;
+    color: #4b6c6c;
+
+}
+
+#aboutus h2, p {
+    margin: 20px; 
+}
+
+#experience-container {
+float: left;
+width: 33%;
+}
+
+#image-container {
+    float: left;
+    width: 33%;
+  
+}
+#image-container img {
+    width: 250px;
+}
+#reliable-container {
+    clear: both;
+    text-align: center;
+    width: 33%;
+    display: block;
+}
+
