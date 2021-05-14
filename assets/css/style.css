@@ -13,7 +13,7 @@ body {
     font-size: 100%;
 }
 
-/* headings and logo*/
+/* Headings and logo*/
 
 header {
     width: 100%;
@@ -59,7 +59,7 @@ header {
     float: left;
 }
 
-/*main image*/
+/*Main image*/
 #main
 {
     clear: both;
@@ -70,7 +70,7 @@ header {
     background: url(../images/main-image.png) no-repeat center center;
 }
 
-/* about us section*/
+/* About us section*/
 #aboutus h2 {
     text-decoration: underline;
     color: #4b6c6c;
@@ -101,3 +101,22 @@ width: 33%;
     display: block;
 }
 
+/* Circular image*/
+#circle-container {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-style: solid;
+    border-color: #4b6c6c;
+    border-width: 4px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#circle-cover-bg {
+    background: url('../images/about-image.jpg') no-repeat center center;
+    border-radius: 50%;
+    background-size: 160px;
+    height: 100%;
+    
+}
