@@ -230,6 +230,15 @@ h3 {
     
 }
 
+/* Add style to other services tab content */
+#first-contrainer {
+    padding: 20px;  
+}
+#first-contrainer p {
+    text-align: center;
+}
+
+
 
 
   
