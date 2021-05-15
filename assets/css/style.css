@@ -164,9 +164,9 @@ h3 {
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    margin: 20px;
+    background-color: #feaf17;
   }
+
   
   /* Style the buttons inside the tab */
   .tab button {
@@ -182,24 +182,54 @@ h3 {
   
   /* Change background color of buttons on hover */
   .tab button:hover {
-    background-color: #ddd;
+    background-color: #4b6c6c;
   }
   
   /* Create an active/current tablink class */
   .tab button.active {
-    background-color: #ccc;
+    background-color: #4b6c6c;
   }
   
   /* Style the tab content */
   .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #4c6d6d;
     border-top: none;
   }
-  .tabcontent h3 {
-      text-align: left;
-      padding: 20px;
-  }
+
+  .tabcontent .heading {
+    text-align: left;
+    padding: 20px;
+    color: #4c6d6d;
+}
+
+.tabcontent, p {
+    color: inherit;
+    
+}
+#domestic-container {
+    width: 60%;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    
+}
+#domestic-image img {
+    float: right;
+    padding-right: 10px;
+    
+}
+#commercial-container {
+    width: 60%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+#commercial-image img {
+    float: right;
+    padding-right: 20px;
+    
+}
 
 
+
+  
