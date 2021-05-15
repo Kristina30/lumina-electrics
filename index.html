@@ -95,9 +95,56 @@
                 </div>
             </div>
         </section>
-        <section id="services">Our services</section>
+        <section id="services">
+            <h2>Our services</h2>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">Domestic Electrical Services</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Comercial Electrical services</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Other Electrical services</button>
+            </div>
+
+            <div id="London" class="tabcontent">
+                <h3>Domestic Electrical Services</h3>
+                <p>Our expert installers have vast experience carrying out electrical work.
+                    Our range of services we specialise in are:
+                    Electrical testing (Electrical Installation Condition Reports), Full house rewires, Installations,
+                    Maintenance and Repairs of domestic properties.
+                    We can provide it all and at very competitive price.
+                    Please contact us for a free quote!</p>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+                <h3>Comercial Electrical services</h3>
+                <p>Our team of expert Commercial electricians offer the best possible standard of workmanship at highly
+                    competitive rates, and we are proud to carry some of the most prestigious electrical accreditations
+                    in the country. Our provision even stretches to thorough and detailed testing of all electrical
+                    equipment in businesses, ensuring your premises remain up to code across the board.
+                    We will always be there when you need us most to give you a reliable and professional service.</p>
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+                <h3>Other Electrical services</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </section>
         <section id=""> Secondary image and accreditations</section>
         <footer> Contact details and social links</footer>
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+
 
 </body>
 

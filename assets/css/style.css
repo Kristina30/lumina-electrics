@@ -70,16 +70,16 @@ header {
 }
 
 /* About us section*/
-#aboutus h2 {
+h2 {
     text-decoration: underline;
     color: #4b6c6c;
-
+    text-align: left;
 }
-
 #aboutus h2, p {
     margin: 20px;
+    text-align: left;
 }
-div h3 {
+#aboutus div h3 {
     color: #4b6c6c;
 }
 
@@ -154,4 +154,52 @@ h3 {
     height: 100%;
     
 }
+/* Style our services section */
+
+#services h2, p {
+    margin: 20px;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin: 20px;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  .tabcontent h3 {
+      text-align: left;
+      padding: 20px;
+  }
+
 
