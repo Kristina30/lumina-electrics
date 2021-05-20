@@ -196,6 +196,7 @@ h3 {
     padding: 6px 12px;
     border: 1px solid #4c6d6d;
     border-top: none;
+    height: 450px;
   }
 
   .tabcontent .heading {
@@ -231,12 +232,33 @@ h3 {
 }
 
 /* Add style to other services tab content */
-#first-contrainer {
-    padding: 20px;  
+.other-services {
+    float: left;
+    width: 25%;
 }
-#first-contrainer p {
-    text-align: center;
+.separator {
+    clear: both;
+    width: 100%;
 }
+
+/* Add style to contact us section */
+ 
+#secondary {
+    background: url('../images/electrical-wires.jpg') no-repeat center center;
+    width: 100%;
+    height: 300px;
+}
+#secondary p {
+    color: white;
+    font-weight: bold;    
+}
+ .contact-img {
+     width: 25%;
+     float: left;
+     padding-top: 20px;
+ }
+ 
+ 
 
 
 

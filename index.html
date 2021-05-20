@@ -31,7 +31,7 @@
                     <a href="#services">Our Services</a>
                 </li>
                 <li>
-                    <a href="#">Contact us</a>
+                    <a href="#contactUs">Contact us</a>
                 </li>
 
 
@@ -98,12 +98,12 @@
         <section id="services">
             <h2>Our services</h2>
             <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'London')">Domestic Electrical Services</button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')">Commercial Electrical Services</button>
-                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Other Services</button>
+                <button id="domestic-service"class="tablinks" onclick="openServices (event, 'Domestic')">Domestic Electrical Services</button>
+                <button class="tablinks" onclick="openServices(event, 'Commercial')">Commercial Electrical Services</button>
+                <button class="tablinks" onclick="openServices(event, 'Others')">Other Services</button>
             </div>
 
-            <div id="London" class="tabcontent">
+            <div id="Domestic" class="tabcontent">
                 <div id="domestic-image">
                     <img src="assets/images/house-image.jpg" alt="Picture of a modern house" width="420">
                     <div id="domestic-container">
@@ -121,7 +121,7 @@
                 </div>
             </div>
 
-            <div id="Paris" class="tabcontent">
+            <div id="Commercial" class="tabcontent">
                 <div id="commercial-image">
                     <img src="assets/images/commercial-image.jpg" alt="Picture of commercial building" width="400">
                     <div id="commercial-container">
@@ -140,44 +140,78 @@
                 </div>
             </div>
 
-            <div id="Tokyo" class="tabcontent">
+            <div id="Others" class="tabcontent">
                 <h3 class="heading">Other Electrical Services</h3>
-
-                <div id="first-contrainer">
+                <div>
+                    <div class="other-services">
                     <img src="assets/images/light-bulb.png" alt="Light bulb icon" width="50">
                     <h4>Lightening </h4>
                     <p>Lighting installs that look good and work great!</p>
+                </div>
+                <div class="other-services">
                     <img src="assets/images/sockets.png" alt="Socket icon" width="50">
                     <h4>Sockets</h4>
                     <p>We can Install extra sockets or relocate existing, whatever you need!</p>
-                     <img src="assets/images/consumer-unit.png" alt="Consumer unit icon" width="50">
+                </div>
+                <div class="other-services">
+                    <img src="assets/images/consumer-unit.png" alt="Consumer unit icon" width="50">
                     <h4>Consumer units</h4>
                     <p>Fuse boards upgraded to keep you as safe as possible at home and work!</p>
-                     <img src="assets/images/testing.png" alt="Multifunctional tester icon" width="50">
+                </div>
+                <div class="other-services">
+                    <img src="assets/images/testing.png" alt="Multifunctional tester icon" width="50">
                     <h4>Testing</h4>
                     <p>Need a certificate or report for a property? Give us a call!!!</p>
-                     <img src="assets/images/foult-cable.png" alt="Faulty cable icon" width="50">
+                </div>
+                <div class="separator"></div>
+                <div class="other-services">
+                    <img src="assets/images/foult-cable.png" alt="Faulty cable icon" width="50">
                     <h4>Fault finding and repairs</h4>
                     <p>Got a circuit that keeps tripping? We can sort it!</p>
-                     <img src="assets/images/outside-power.png" alt="House icon" width="50">
+                </div>
+                <div class="other-services">
+                    <img src="assets/images/outside-power.png" alt="House icon" width="50">
                     <h4>Outside power</h4>
                     <p>External supplies installed to sheds, cabins, hot tubs and garages.</p>
-                     <img src="assets/images/energy-saving.png" alt="Energy saving icon" width="50">
+                </div>
+                <div class="other-services">
+                    <img src="assets/images/energy-saving.png" alt="Energy saving icon" width="50">
                     <h4>Energy saving</h4>
                     <p>We can help you save the planet and cut your bills!</p>
+                </div>
+                <div class="other-services">
                     <img src="assets/images/rewire.png" alt="Folded cable icon" width="50">
                     <h4>Rewires</h4>
                     <p>Full rewires or upgrades are undertaken.</p>
-
+                </div>
                 </div>
 
         </section>
 
-        <section id=""> Secondary image and accreditations</section>
+        <section id="contactUs">
+            <div id="secondary">
+                <div>
+                    <p> Looking for a team of Domestic and Commercial electricians? </p>
+                    <p> Well, you've come to the right place....</p>
+                    <p> Welcome to LUMINA ELECTRICS - team of fully qualified and highly skileed electrical engineers.</p>
+                <button> CONTACT US </button>
+                </div>
+                </div>
+                <div></div>
+                <div class="contact-img"> <img src="assets/images/napit-approved.jpg" alt="Napid" width="100px"></div>
+                <div class="contact-img"><img src="assets/images/trust-mark.jpg" alt="Trust mark" width="250px"></div>
+                <div class="contact-img"><img src="assets/images/city-guilts.jpg" alt="City and Guilt" width="100px">></div>
+                <div class="contact-img"><img src="assets/images/registered-competent-person.jpg" alt="Registered competent person" width="150px"></div>
+            </div>
+        
+            
+        </section>
         <footer> Contact details and social links</footer>
 
         <script>
-            function openCity(evt, cityName) {
+            document.getElementById('domestic-service').click();
+
+            function openServices(evt, serviceName) {
                 var i, tabcontent, tablinks;
                 tabcontent = document.getElementsByClassName("tabcontent");
                 for (i = 0; i < tabcontent.length; i++) {
@@ -187,7 +221,7 @@
                 for (i = 0; i < tablinks.length; i++) {
                     tablinks[i].className = tablinks[i].className.replace(" active", "");
                 }
-                document.getElementById(cityName).style.display = "block";
+                document.getElementById(serviceName).style.display = "block";
                 evt.currentTarget.className += " active";
             }
         </script>
