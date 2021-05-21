@@ -10,11 +10,17 @@
     <meta name="keywords"
         content="lumina electrics, electrical services, domesctic, commercial, electrical instalations, electrical testing ">
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Font awsome css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+   
 
     <title>Lumina Electrics</title>
 </head>
 
 <body>
+   
     <header>
         <div id="logoContainer">
             <a href="#"><img id="logo" src="assets/images/main-logo.png" alt="lumina electrics logo"></a>
@@ -96,10 +102,13 @@
             </div>
         </section>
         <section id="services">
+
             <h2>Our services</h2>
             <div class="tab">
-                <button id="domestic-service"class="tablinks" onclick="openServices (event, 'Domestic')">Domestic Electrical Services</button>
-                <button class="tablinks" onclick="openServices(event, 'Commercial')">Commercial Electrical Services</button>
+                <button id="domestic-service" class="tablinks" onclick="openServices (event, 'Domestic')">Domestic
+                    Electrical Services</button>
+                <button class="tablinks" onclick="openServices(event, 'Commercial')">Commercial Electrical
+                    Services</button>
                 <button class="tablinks" onclick="openServices(event, 'Others')">Other Services</button>
             </div>
 
@@ -144,88 +153,176 @@
                 <h3 class="heading">Other Electrical Services</h3>
                 <div>
                     <div class="other-services">
-                    <img src="assets/images/light-bulb.png" alt="Light bulb icon" width="50">
-                    <h4>Lightening </h4>
-                    <p>Lighting installs that look good and work great!</p>
+                        <img src="assets/images/light-bulb.png" alt="Light bulb icon" width="50">
+                        <h4>Lightening </h4>
+                        <p>Lighting installs that look good and work great!</p>
+                    </div>
+                    <div class="other-services">
+                        <img src="assets/images/sockets.png" alt="Socket icon" width="50">
+                        <h4>Sockets</h4>
+                        <p>We can Install extra sockets or relocate existing, whatever you need!</p>
+                    </div>
+                    <div class="other-services">
+                        <img src="assets/images/consumer-unit.png" alt="Consumer unit icon" width="50">
+                        <h4>Consumer units</h4>
+                        <p>Fuse boards upgraded to keep you as safe as possible at home and work!</p>
+                    </div>
+                    <div class="other-services">
+                        <img src="assets/images/testing.png" alt="Multifunctional tester icon" width="50">
+                        <h4>Testing</h4>
+                        <p>Need a certificate or report for a property? Give us a call!!!</p>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="other-services">
+                        <img src="assets/images/foult-cable.png" alt="Faulty cable icon" width="50">
+                        <h4>Fault finding and repairs</h4>
+                        <p>Got a circuit that keeps tripping? We can sort it!</p>
+                    </div>
+                    <div class="other-services">
+                        <img src="assets/images/outside-power.png" alt="House icon" width="50">
+                        <h4>Outside power</h4>
+                        <p>External supplies installed to sheds, cabins, hot tubs and garages.</p>
+                    </div>
+                    <div class="other-services">
+                        <img src="assets/images/energy-saving.png" alt="Energy saving icon" width="50">
+                        <h4>Energy saving</h4>
+                        <p>We can help you save the planet and cut your bills!</p>
+                    </div>
+                    <div class="other-services">
+                        <img src="assets/images/rewire.png" alt="Folded cable icon" width="50">
+                        <h4>Rewires</h4>
+                        <p>Full rewires or upgrades are undertaken.</p>
+                    </div>
                 </div>
-                <div class="other-services">
-                    <img src="assets/images/sockets.png" alt="Socket icon" width="50">
-                    <h4>Sockets</h4>
-                    <p>We can Install extra sockets or relocate existing, whatever you need!</p>
-                </div>
-                <div class="other-services">
-                    <img src="assets/images/consumer-unit.png" alt="Consumer unit icon" width="50">
-                    <h4>Consumer units</h4>
-                    <p>Fuse boards upgraded to keep you as safe as possible at home and work!</p>
-                </div>
-                <div class="other-services">
-                    <img src="assets/images/testing.png" alt="Multifunctional tester icon" width="50">
-                    <h4>Testing</h4>
-                    <p>Need a certificate or report for a property? Give us a call!!!</p>
-                </div>
-                <div class="separator"></div>
-                <div class="other-services">
-                    <img src="assets/images/foult-cable.png" alt="Faulty cable icon" width="50">
-                    <h4>Fault finding and repairs</h4>
-                    <p>Got a circuit that keeps tripping? We can sort it!</p>
-                </div>
-                <div class="other-services">
-                    <img src="assets/images/outside-power.png" alt="House icon" width="50">
-                    <h4>Outside power</h4>
-                    <p>External supplies installed to sheds, cabins, hot tubs and garages.</p>
-                </div>
-                <div class="other-services">
-                    <img src="assets/images/energy-saving.png" alt="Energy saving icon" width="50">
-                    <h4>Energy saving</h4>
-                    <p>We can help you save the planet and cut your bills!</p>
-                </div>
-                <div class="other-services">
-                    <img src="assets/images/rewire.png" alt="Folded cable icon" width="50">
-                    <h4>Rewires</h4>
-                    <p>Full rewires or upgrades are undertaken.</p>
-                </div>
-                </div>
-
+            </div>
         </section>
 
         <section id="contactUs">
             <div id="secondary">
-                <div>
-                    <p> Looking for a team of Domestic and Commercial electricians? </p>
+                <div class="contactUs-content">
+                    <p>Looking for a team of Domestic and Commercial electricians? </p>
                     <p> Well, you've come to the right place....</p>
-                    <p> Welcome to LUMINA ELECTRICS - team of fully qualified and highly skileed electrical engineers.</p>
-                <button> CONTACT US </button>
+                    <p> Welcome to LUMINA ELECTRICS - team of fully qualified and highly skileed electrical engineers.
+                    </p>
+                    <button id="btnContact-form"> CONTACT US </button>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <form action="action_page.php">
+
+                                <label for="fname">Full Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="lastname" placeholder="Your email..">
+                            
+                                <label for="tel">Tel</label>
+                                <input type="text" id="tel" name="tel" placeholder="Your tel..">
+                            
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Write something.."></textarea>
+                            
+                                <input type="submit" value="Submit">
+                            
+                              </form>
+                        </div>
+
+                    </div>
+
                 </div>
-                </div>
-                <div></div>
-                <div class="contact-img"> <img src="assets/images/napit-approved.jpg" alt="Napid" width="100px"></div>
-                <div class="contact-img"><img src="assets/images/trust-mark.jpg" alt="Trust mark" width="250px"></div>
-                <div class="contact-img"><img src="assets/images/city-guilts.jpg" alt="City and Guilt" width="100px">></div>
-                <div class="contact-img"><img src="assets/images/registered-competent-person.jpg" alt="Registered competent person" width="150px"></div>
             </div>
-        
-            
+
+            <div class="contact-img"> <img src="assets/images/napit-approved.jpg" alt="Napid" width="100px"></div>
+            <div class="contact-img"><img src="assets/images/trust-mark.jpg" alt="Trust mark" width="250px"></div>
+            <div class="contact-img"><img src="assets/images/city-guilts.jpg" alt="City and Guilt" width="100px"></div>
+            <div class="contact-img"><img src="assets/images/registered-competent-person.jpg"
+                    alt="Registered competent person" width="150px"></div>
+
+
+
         </section>
-        <footer> Contact details and social links</footer>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-contacts">
+                <label> Get in touch!</label>
+                <label> <a href="tel:07595860894">07595860894</a></label>
+                <label> 11 Sugar Way, Peterborough, PE2 9RL</label>
+                <label> <a href="mailto:delko@luminaelectrics.com">delko@luminaelectrics.com</a></label>
+            </div>
+            <div class="socialMedia-links">
+                <ul>
+                    <li>
+                        <a href="https://facebook.com" target="_blank" rel="noopener"
+                            aria-label="Visit our Facebook page (open in a new tab)">
+                            <i class="fa fa-facebook-square" style="font-size:24px; color:black;"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener"
+                            aria-label="Visit our Linkedin page (open in a new tab)">
+                            <i class="fa fa-linkedin-square" style="font-size:24px; color:black;"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" target="_blank" rel="noopener"
+                            aria-label="Visit our Twitter page (open in a new tab)">
+                            <i class="fa fa-twitter-square" style="font-size:24px; color:black;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
-        <script>
-            document.getElementById('domestic-service').click();
+    <script>
+        document.getElementById('domestic-service').click();
 
-            function openServices(evt, serviceName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(serviceName).style.display = "block";
-                evt.currentTarget.className += " active";
+        function openServices(evt, serviceName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
             }
-        </script>
-
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(serviceName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+  <!-- Modal dialog -->
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("btnContact-form");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
 
 
 
