@@ -245,7 +245,7 @@ h3 {
 #secondary {
     background: url('../images/electrical-wires.jpg');
     height: 400px;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
   
 }
@@ -272,22 +272,22 @@ h3 {
 
  /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
   }
   
   /* Modal Content */
   .modal-content {
-    background-color: #fefefe;
+    background:url('../images/contact-form.jpg') center;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -295,11 +295,12 @@ h3 {
   }
   .modal-content label {
       float: left;
+      color: #f2f2f2;
   }
   
   /* The Close Button */
   .close {
-    color: #aaaaaa;
+    color: #f9ae22;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -307,26 +308,26 @@ h3 {
   
   .close:hover,
   .close:focus {
-    color: #000;
+    color: #4c6d6d;
     text-decoration: none;
     cursor: pointer;
   }
 
   /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #f9ae22; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
   }
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #f9ae22;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -336,13 +337,13 @@ input[type=text], select, textarea {
   
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #4c6d6d;
   }
   
   /* Add a background color and some padding around the form */
   .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background: #f2f2f2;
     padding: 20px;
   }
 
@@ -355,7 +356,7 @@ input[type=text], select, textarea {
       font-weight: bold;
   }
 
- /* Add style to footer*/
+ /* Style the footer*/
  .footer-contacts{
      margin-top: 20px;
      width: 100%;
@@ -368,17 +369,26 @@ input[type=text], select, textarea {
  .footer-content label {
     
     display: block;
-    width: 200px;
+    width: 250px;
+    color: black;
+}
+
+.footer-content i {
+    
+    margin-right: 5px;
 }
 
 .footer-content a {
-    
-    color: #4c6d6d;
+    color: black;
     text-decoration: none;
 }
 
+#address {
+    display: inline;
+}
+
  .footer-contacts {
-     width: 250px;
+     width: 50%;
      float: left;
      padding-left: 20px;
  }
@@ -390,13 +400,173 @@ input[type=text], select, textarea {
 
  .socialMedia-links ul li {
     float: right;
-text-decoration: none;
-margin-left: 10px;
+    text-decoration: none;
+    margin-left: 10px;
 }
 .socialMedia-links ul
 {
     list-style-type: none;
 }
+
+
+
+
+/* small screen size*/
+
+
+@media only screen and (max-width: 915px) and (min-width: 200px)  
+{
+  .other-services
+  {
+      width: 100%;
+  }
+  .other-services img
+  {
+      float: none;
+  }
+  .other-services h4
+  {
+      float: none;
+  }
+ }
+
+@media only screen and (max-width: 915px) {
+
+    #left-experience-container
+    { 
+        width: 100%;
+    }
+    #experience-container
+    {
+        float:none;
+        width: 100%;
+    }
+    #center-reliable-container
+    {
+        width: 100%;
+        float: none;
+        clear: both;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    #reliable-container
+    {
+        width: 100%;
+        float: none;
+    }
+    #skilled-container
+    {
+        width: 100%;
+    }
+
+    #left-skilled-container
+    {
+        float: none;
+        width: 100%;
+    }
+    #center-circle-container
+    {
+        display: none;
+    }
+
+    #circle-container
+    {
+        margin:0px;
+    }
+
+    #domestic-container, #commercial-container
+    {
+        width:100%;
+    }
+
+    .tabcontent
+    {
+        height: auto;
+        border: none;
+    }
+
+    #domestic-image img
+    {
+        display: none;
+    }
+    #commercial-image img
+    {
+        display: none;
+    }
+
+    #secondary
+    {
+        height: auto;
+        background: url('../images/electrical-wires-small.jpg');
+    }
+
+    .contactUs-content
+    {
+        padding-top: 0px;
+    }
+
+    #secondary p
+    {
+        font-size: 15px;
+    }
+    #btnContact-form {
+        font-size: 15px;
+    }
+    .contact-img
+    {
+        width: 100%;
+    }
+
+    
+    .footer-contacts,.socialMedia-links
+    {
+        width: 100%;
+        float: none;
+        padding-top: 10px;
+    }
+    .socialMedia-links ul
+    {
+        float: left;
+    }
+    
+    .tab button
+    {
+        width: 100%;
+    }
+
+    #menu li
+    {
+        
+        float:left;
+    }
+    #logo
+    {
+        width: 90%;
+        height: auto;
+        float: none;
+    }
+  }
+
+  @media only screen and (max-width: 970px) and (min-width: 915px)  
+ {
+    
+    #menu li
+    {
+        
+        float:left;
+    }
+    #logo
+    {
+        width: 100%;
+        height: auto;
+    }
+    #logoContainer
+    {
+        width:30%;
+    }
+  }
+
+ 
 
 
  
