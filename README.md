@@ -1,59 +1,64 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Lumina Electrics Website
 
-Welcome Kristina Borisova Hadzhieva,
+This is the main marketing website for Lumina Electrics. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for potential customers.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+## Main page structure
 
-## Gitpod Reminders
+The main page consists of a header with a logo and navbar in addition with another four sections and a footer.
+   * First section contains the hero image.
+   * Second section contains About Us information.
+   * Third section contains the services provided.
+   * Fourth section contains the Contact us and accreditations owed. Within this section there is a pop-up window that contains a contact form. The user can input their information to get in touch with the company. The contact form is static only, meaning clicking "Submit" does not actually send the information given anywhere.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![Lumina Electrics Web page](./images/web-page-screenshot.png)
 
-`python3 -m http.server`
+## Design
 
-A blue button should appear to click: _Make Public_,
+### Colour Scheme
+The two main colours used are CMYK Colours: #4c6d6d and #f9ae22.
 
-Another blue button should appear to click: _Open Browser_.
+### Typography
+The OpenSans + Oswald font are used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Imagery
+Imagery is very important. The large, background hero image is designed to be striking and catching the user's attention.
 
-A blue button should appear to click: _Make Public_,
+### Features
+   * Responsive on all device sizes
+   * Interactive elements
 
-Another blue button should appear to click: _Open Browser_.
+## Technologies Used
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Languages Used
+   * HTML5
+   * CSS3
+   * JavaScript
 
-To log into the Heroku toolbelt CLI:
+### Frameworks, Libraries & Programs Used
+   * Hover.css;
+   * Google Fonts;
+   * Font Awesome:
+   * JavaScript;
+   * Balsamiq:
+   * Photoshop.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Testing
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+The W3C Markup Validator and W3C CSS Validator Services were used to validate the code of my project to ensure there were no syntax errors.
+   * W3C Markup Validator - Results
+   * W3C CSS Validator - Results
 
-## Updates Since The Instructional Video
+## Deployment procedure
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The first step of the procedure is to come up with a design. Once I've created the design on Balsamiq wareframes the steps taken were:
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+   * Incerting the logo and creating a navbar that is easy and fairly simple to use. Once clicked it takes the user to the relevat section.
+   * Adding the hero imagen so it gives more style to the main page.
+   * Creating About Us section.
+   * Creating Our services section with a tab bar that clearly states the services provided.
+   * Creating the contact form as a pop-up when contact us button is clicked.
+   * As a last step i have created the footer that includes the social media links and the contact details of the company.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Once the webpage been fully created, I staged it to be pushed to github by using the Git version control system.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
----
-
-Happy coding!
+The final step used was pushing the finished product to github.
