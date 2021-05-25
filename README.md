@@ -10,7 +10,7 @@ The main page consists of a header with a logo and navbar in addition with anoth
    * Third section contains the services provided.
    * Fourth section contains the Contact us and accreditations owed. Within this section there is a pop-up window that contains a contact form. The user can input their information to get in touch with the company. The contact form is static only, meaning clicking "Submit" does not actually send the information given anywhere.
 
-![Lumina Electrics Web page](./images/web-page-screenshot.png)
+![Lumina Electrics Web page](https://github.com/Kristina30/lumina-electrics/blob/master/assets/images/web-page-screenshot.png)
 
 ## Design
 
