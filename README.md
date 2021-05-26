@@ -7,10 +7,13 @@ This is the main marketing website for Lumina Electrics. It is designed to be re
 The main page consists of a header with a logo and navbar in addition with another four sections and a footer.
    * First section contains the hero image.
    * Second section contains About Us information.
-   * Third section contains the services provided.
-   * Fourth section contains the Contact us and accreditations owed. Within this section there is a pop-up window that contains a contact form. The user can input their information to get in touch with the company. The contact form is static only, meaning clicking "Submit" does not actually send the information given anywhere.
+   * Third section contains tabs so that the user can easily navigate through the services provided by the company.
 
 ![Lumina Electrics Web page](https://github.com/Kristina30/lumina-electrics/blob/master/assets/images/web-page-screenshot.png)
+
+   * Fourth section contains the Contact us form and accreditations owed. Within this section there is a pop-up window that contains a contact form. The user can input their information to get in touch with the company. The contact form is static only, meaning clicking "Submit" does not actually send the information given anywhere.
+
+![Contact us form](https://github.com/Kristina30/lumina-electrics/bloob/master/assets/images/contact-form-screenshot.png)
 
 ## Design
 
