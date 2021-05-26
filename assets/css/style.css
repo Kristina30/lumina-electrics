@@ -71,9 +71,10 @@ header {
 
 /* About us section*/
 h2 {
-    text-decoration: underline;
     color: #4b6c6c;
     text-align: left;
+    font-weight: bold;
+    font-size: 30px;
 }
 #aboutus h2, p {
     margin: 20px;
@@ -242,6 +243,25 @@ h3 {
 }
 
 /* Add style to contact us section */ 
+#secondary::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    z-index: 0;
+}
+#secondary {
+    position: relative;
+}
+#secondary > * {
+    z-index: 10;
+    position: relative;
+}
 #secondary {
     background: url('../images/electrical-wires.jpg');
     height: 400px;
@@ -252,14 +272,12 @@ h3 {
 #secondary img {
     height: 100%; width: 100%;
     object-fit: cover;
-    opacity: 0.4;
-    position: relative;
 }
 #secondary p {
-    color: #fff;
+    color: #f2f2f2;
     font-weight: bold;  
     text-align: left;
-    font-size: 30px;
+    font-size: 26px;
 } 
 .contactUs-content {
     padding-top: 100px;
@@ -269,13 +287,13 @@ h3 {
      float: left;
      padding-top: 20px;
  }
-
+ 
  /* The Modal (background) */
 .modal {
     display: none; 
     position: fixed; 
     z-index: 1; 
-    padding-top: 100px; 
+    padding-top: 50px; 
     left: 0;
     top: 0;
     width: 100%; 
@@ -287,15 +305,20 @@ h3 {
   
   /* Modal Content */
   .modal-content {
-    background:url('../images/contact-form.jpg') center;
+    background-color: #f2f2f2;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
   }
+  .modal-content h2 {
+      text-align: center;
+      letter-spacing: 2px;
+  }
   .modal-content label {
       float: left;
-      color: #f2f2f2;
+      color: #4c6d6d;
+      font-weight: bold;
   }
   
   /* The Close Button */
@@ -349,10 +372,10 @@ input[type=text], select, textarea {
 
   /* Add style to the botton*/
   #btnContact-form {
-      background-color: white;
+      background-color: #f9ae22;
       padding: 10px;
       border-radius: 5px;
-      font-size: 20px;
+      font-size: 20px;  
       font-weight: bold;
   }
 
@@ -395,7 +418,7 @@ input[type=text], select, textarea {
  .socialMedia-links {
         float: right;
         padding-right: 20px;
-        padding-top:100px;
+        padding-top:60px;
  }
 
  .socialMedia-links ul li {
@@ -408,11 +431,7 @@ input[type=text], select, textarea {
     list-style-type: none;
 }
 
-
-
-
-/* small screen size*/
-
+/* Responsive screen size*/
 
 @media only screen and (max-width: 915px) and (min-width: 200px)  
 {

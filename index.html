@@ -11,6 +11,7 @@
         content="lumina electrics, electrical services, domesctic, commercial, electrical instalations, electrical testing ">
     <link rel="stylesheet" href="assets/css/style.css">
     
+    
     <title>Lumina Electrics</title>
 </head>
 
@@ -204,9 +205,10 @@
                 <div class="contactUs-content">
                     <p>Looking for a team of Domestic and Commercial electricians? </p>
                     <p> Well, you've come to the right place....</p>
-                    <p> Welcome to LUMINA ELECTRICS - team of fully qualified and highly skileed electrical engineers.
+                    <p> Welcome to LUMINA ELECTRICS - team of fully qualified and highly skilled electrical engineers.
                     </p>
                     <button id="btnContact-form"> CONTACT US </button>
+                    
                     <!-- The Modal -->
                     <div id="myModal" class="modal">
 
@@ -214,15 +216,15 @@
                         <div class="modal-content">
                             <span class="close">&times;</span>
                             <form action="action_page.php">
-
+                                <h2>Contact Form</h2>
                                 <label for="fname">Full Name</label>
-                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
                             
                                 <label for="email">Email</label>
-                                <input type="text" id="email" name="lastname" placeholder="Your email..">
+                                <input type="text" id="email" name="lastname" placeholder="Your email.." required>
                             
                                 <label for="tel">Tel</label>
-                                <input type="text" id="tel" name="tel" placeholder="Your tel..">
+                                <input type="text" id="tel" name="tel" placeholder="Your tel.." required>
                             
                                 <label for="message">Message</label>
                                 <textarea id="message" name="message" placeholder="Your query.."></textarea>
@@ -236,12 +238,12 @@
 
                 </div>
             </div>
-
+    
             <div class="contact-img"> <img src="assets/images/napit-approved.jpg" alt="Napid" width="100"></div>
             <div class="contact-img"><img src="assets/images/trust-mark.jpg" alt="Trust mark" width="250"></div>
             <div class="contact-img"><img src="assets/images/city-guilts.jpg" alt="City and Guilt" width="100"></div>
-            <div class="contact-img"><img src="assets/images/registered-competent-person.jpg"
-                    alt="Registered competent person" width="150"></div>
+            <div class="contact-img"><img src="assets/images/registered-competent-person.jpg" alt="Registered competent person" width="150"></div>
+            
         </section>
     </div>
 
@@ -278,56 +280,12 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        document.getElementById('domestic-service').click();
-
-        function openServices(evt, serviceName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(serviceName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
-  <!-- Modal dialog -->
-  <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-    
-    // Get the button that opens the modal
-    var btn = document.getElementById("btnContact-form");
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-    </script>
-
+ 
 <!--Font awesome script-->
 <script src="https://kit.fontawesome.com/e766cfb58d.js" crossorigin="anonymous"></script>
 
+<!-- JavaScript -->
+<script src="assets/js/script.js"></script>
 </body>
 
 </html>
