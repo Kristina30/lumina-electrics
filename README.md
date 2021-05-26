@@ -11,9 +11,10 @@ The main page consists of a header with a logo and navbar in addition with anoth
 
 ![Lumina Electrics Web page](https://github.com/Kristina30/lumina-electrics/blob/master/assets/images/web-page-screenshot.png)
 
-   * Fourth section contains the Contact us form and accreditations owed. Within this section there is a pop-up window that contains a contact form. The user can input their information to get in touch with the company. The contact form is static only, meaning clicking "Submit" does not actually send the information given anywhere.
+   * Fourth section contains the Contact us form and accreditations owed. Within this section there is a button. When the user clicks the button a pop-up window appears containing a contact form. The user can input their information to get in touch with the company. The contact form is static only, meaning clicking "Submit" does not actually send the information given anywhere.
 
-![Contact us form](https://github.com/Kristina30/lumina-electrics/bloob/master/assets/images/contact-form-screenshot.png)
+![Contact us form](https://github.com/Kristina30/lumina-electrics/blob/master/assets/images/contact-form-screenshot.png)
+
 
 ## Design
 
